@@ -1,16 +1,35 @@
+/* Базовые настройки для прижатия футера */
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
 }
 
-.placeholder-box {
-  min-height: 240px;
+main {
+  flex: 1;
 }
 
-.placeholder-image {
-  min-height: 320px;
+/* Настройки карточек и картинок */
+.card {
+  transition: transform 0.2s ease-in-out;
 }
 
-.card-img-top {
-  height: 180px;
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+/* Фикс размеров картинок в карточках каталога */
+.product-img {
+  height: 250px;
   object-fit: cover;
+  object-position: center;
+}
+
+/* Заглушка для страницы товара, если нет картинки */
+.placeholder-image {
+  min-height: 350px;
+  background-color: #e9ecef;
+  border-radius: .375rem;
 }

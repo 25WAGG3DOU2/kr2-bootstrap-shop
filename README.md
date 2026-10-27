@@ -31,7 +31,7 @@
 
 ## Структура проекта
 
-```text
+
 kr2-bootstrap-shop/
 ├── index.html
 ├── css/
